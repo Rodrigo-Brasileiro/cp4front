@@ -11,7 +11,7 @@
 }
 
 header{
-    background-color: black;
+    background-color: var(--color-neutral-0);
     /* background-image: url('../img/promocao1.jpg');
     background-position: right;
     background-repeat: no-repeat; */
@@ -57,7 +57,7 @@ header nav ul li a{
 }
 header nav ul li a:hover{
     background-color: white;
-    color: black;
+    color: var(--color-neutral-0);
 }
 
 main{
