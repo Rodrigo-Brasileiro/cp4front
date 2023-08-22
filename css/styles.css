@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root{
+    --color-neutral-0: #0c0e0e;
+    --color-neutral-10: #171717;
+}
+
 header{
     background-color: black;
     /* background-image: url('../img/promocao1.jpg');
@@ -16,6 +22,9 @@ header{
     align-items: flex-start;
     align-content: stretch;
 }
+
+
+
 header img{
     position: left;
     align-items: center;
@@ -48,6 +57,7 @@ header nav ul li a{
 }
 header nav ul li a:hover{
     background-color: white;
+    color: black;
 }
 
 main{
@@ -67,12 +77,18 @@ main{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 .card img{
     max-width: 100%;
 }
 
-.card a{
+main .card:hover{
+    background-color: gray;
+    color: white;
+}
+
+/* .card a{
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
@@ -81,4 +97,23 @@ main{
     border-radius: 5px;
     align-self: flex-end;
     
+} */
+
+footer .rodapé_superior{
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center; 
+    padding-top: 30px; 
+}
+
+footer h3{
+    padding-top: 0.2em;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    color: var(--color-neutral-10);
 }
