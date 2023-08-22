@@ -6,7 +6,7 @@
 }
 
 :root{
-    --color-neutral-0: #0c0e0e;
+    --color-neutral-0: #000000;
     --color-neutral-10: #171717;
 }
 
@@ -99,9 +99,9 @@ main .card:hover{
     
 } */
 
-footer .rodapé_superior{
+footer .rodapé{
     height: 100px;
-    background-color: black;
+    background-color: var(--color-neutral-0);
     color: white;
     text-align: center; 
     padding-top: 30px; 
@@ -111,9 +111,3 @@ footer h3{
     padding-top: 0.2em;
 }
 
-footer .copyright{
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-neutral-0);
-    color: var(--color-neutral-10);
-}
