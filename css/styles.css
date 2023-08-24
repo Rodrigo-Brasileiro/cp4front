@@ -4,8 +4,18 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+:root{
+    --color-neutral-0: #000000;
+    --color-neutral-10: #171717;
+    --color-neutral-button: #ff0000;
+    --color-neutral-button2: #00ff00;
+    --largura-padrão: 207px;
+    --altura-padrão: 225px;
+}
+
 header{
-    background-color: black;
+    background-color: var(--color-neutral-0);
     /* background-image: url('../img/promocao1.jpg');
     background-position: right;
     background-repeat: no-repeat; */
@@ -16,38 +26,48 @@ header{
     align-items: flex-start;
     align-content: stretch;
 }
+
+
+
 header img{
     position: left;
     align-items: center;
     display: inline-block;
 }
+
 header h1{
     color: white;
     text-align: center;
 }
+
 header h2{
     color: white;
     text-align: center;
     padding: 1em;
 }
+
 header nav{
     padding: 1em;
     display: flex;
     justify-content: center;
 }
+
 header nav ul{
     display: flex;
     justify-content: center;
     list-style: none;
 }
+
 header nav ul li a{
     text-decoration: none;
     color: gray;
     display: inline-block;
     padding: 10px 15px;
 }
+
 header nav ul li a:hover{
     background-color: white;
+    color: var(--color-neutral-0);
 }
 
 main{
@@ -67,12 +87,20 @@ main{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    cursor: pointer;
 }
 .card img{
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: var(--largura-padrão);
+    height: var(--altura-padrão);
 }
 
-.card a{
+main .card:hover{
+    background-color: gray;
+    color: white;
+}
+
+/* .card a{
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
@@ -81,4 +109,37 @@ main{
     border-radius: 5px;
     align-self: flex-end;
     
+} */
+
+footer .rodapé{
+    height: 100px;
+    background-color: var(--color-neutral-0);
+    color: white;
+    text-align: center; 
+    padding-top: 30px; 
+}
+
+footer h3{
+    padding-top: 0.2em;
+}
+
+button{
+    cursor: pointer; 
+}
+
+button .button2{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--color-neutral-button);
+}
+
+.button2:hover{
+    background-color: var(--color-neutral-button2) ;
+}
+
+p:hover{
+    background-color: gray;
+    color: white;
 }
