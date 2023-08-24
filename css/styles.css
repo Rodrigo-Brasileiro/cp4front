@@ -29,15 +29,12 @@ header{
 
 
 
-header img{
+header div img, h1{
     position: left;
     align-items: center;
-    display: inline-block;
-}
-
-header h1{
     color: white;
-    text-align: center;
+    display: inline-block;
+    margin-right: 400px;
 }
 
 header h2{
