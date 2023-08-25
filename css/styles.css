@@ -16,6 +16,11 @@
     --altura-padrão: 225px;
 }
 
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
 header{
     background-color: var(--color-neutral-0);
     /* background-image: url('../img/promocao1.jpg');
@@ -72,15 +77,21 @@ header nav ul li a:hover{
     color: var(--color-neutral-0);
 }
 
-main{
+.promocao{
     flex-grow: 1;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+
 }
-main img{
-    background-color: lightblue;
+
+.cards{
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
 }
 
 .card{
@@ -94,14 +105,16 @@ main img{
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    flex-wrap: wrap;
 }
-.card img{
+
+.cards .card img{
     /* max-width: 100%; */
     width: var(--largura-padrão);
     height: var(--altura-padrão);
 }
 
-main .card:hover{
+.cards .card:hover{
     background-color: var(--color-neutral-75);
     color: var(--color-neutral-100);
 }
@@ -149,3 +162,61 @@ p:hover{
     background-color: var(--color-neutral-75);
     color: var(--color-neutral-100);
 }
+
+@media screen and (max-width: 1174px){
+
+    .promocao{
+        width: 100%
+    }
+
+    .cards{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1165px){
+
+    .promocao{
+        width: 100%
+    }
+
+    .promocao3{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 803px){
+
+    .promocao{
+        width: 100%
+    }
+
+    .promocao2{
+        margin-top: 30px;
+    }
+
+    .promocao3{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1009px){
+    .cards{
+        width: 100%;
+    }
+
+    .cards .card{
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (max-width: 699px){
+    .cards{
+        width: 100%;
+    }
+
+    .cards .card{
+        background-color:lightgreen;
+    }
+}
+
