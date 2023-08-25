@@ -184,12 +184,6 @@ p:hover{
     }
 }
 
-@media screen and (max-width: 985px){
-    h1{
-        font-size: 10px;
-    }
-}
-
 @media screen and (max-width: 1050px){
     h2{
         font-size: 14px;
