@@ -41,6 +41,7 @@ header div img, h1{
     margin-right: 400px;
     position: absolute;
 }
+
 header h1{
     left: 450px;
     padding-top: 15px;
@@ -119,17 +120,6 @@ header nav ul li a:hover{
     color: var(--color-neutral-100);
 }
 
-/* .card a{
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border-radius: 5px;
-    align-self: flex-end;
-    
-} */
-
 footer .rodapé{
     height: 100px;
     background-color: var(--color-neutral-0);
@@ -162,6 +152,55 @@ p:hover{
     background-color: var(--color-neutral-75);
     color: var(--color-neutral-100);
 }
+
+@media screen and (max-width: 1157px){
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1139px){
+    h1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1099px){
+    h1{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1061px){
+    h1{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 1023px){
+    h1{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 985px){
+    h1{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    h2{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 698px){
+    h2{
+        font-size: 10px;
+    }
+}    
 
 @media screen and (max-width: 1174px){
 
@@ -219,4 +258,3 @@ p:hover{
         background-color:lightgreen;
     }
 }
-
